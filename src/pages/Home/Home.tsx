@@ -1,5 +1,5 @@
 import { motion, AnimatePresence } from 'framer-motion';
-import { useState } from 'react';
+import React, { useState } from 'react';
 import { Button, ContentWrapper } from "../../components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faDatabase, faCogs, faRocket } from '@fortawesome/free-solid-svg-icons';
@@ -8,17 +8,42 @@ import './Home.scss';
 
 
 function Home() {
+
   return (
     <section className="container">
 
       <div className="intro">
-        <h1 className="text-center mt-5">React quizzes</h1>
-        <p className="h6 text-center mt-3">Test yourself in React and make cool quizzes!</p>
+        <motion.h1 className="text-center mt-5 title"
+          initial={{y: -500, scale: 2.5, opacity: 0}}
+          animate={{y: 0, scale: 1, opacity: 1}}
+          transition={{duration: 0.75}}
+        >
+          React
+        </motion.h1>
+        <motion.p className="text-center title h1"
+          initial={{ y: -500, scale: 2.5, opacity: 0 }}
+          animate={{ y: 0, scale: 1, opacity: 1 }}
+          transition={{ duration: 0.75, delay: 0.75 }}
+        >
+          Quizzes
+        </motion.p>
+        <motion.p className="h6 text-center mt-3"
+          initial={{ y: -500, scale: 2.5, opacity: 0 }}
+          animate={{ y: 0, scale: 1, opacity: 1 }}
+          transition={{ duration: 0.75, delay: 1.25 }}
+        >
+          Test yourself in React and make cool quizzes!
+        </motion.p>
       </div>
 
 
       <div className="row mt-5">
-        <ContentWrapper classList="col-12 col-md mb-3 mb-md-0 me-md-3 me-lg-5">
+        <ContentWrapper classList="col-12 col-md mb-3 mb-md-0 me-md-3 me-lg-5" animSettings={{
+            initial: { x: -80, opacity: 0, scale: 0.1, rotate: 90 },
+            whileInView: { x: 0, opacity: 1, scale: 1, rotate: 0 },
+            transition: {duration: 0.7, delay: 0.5},
+            viewport: {once: true}
+        }}>
           <p className="text-center h1"><FontAwesomeIcon icon={faThumbsUp} /> </p>
           <h2 className="text-center">Simple</h2>
           <p>
@@ -29,7 +54,14 @@ function Home() {
           </p>
         </ContentWrapper>
 
-        <ContentWrapper classList="col-12 col-md mb-3 mb-md-0 me-md-3 me-lg-5">
+        <ContentWrapper classList="col-12 col-md mb-3 mb-md-0 me-md-3 me-lg-5"
+          animSettings={{
+            initial: { x: -130, opacity: 0, scale: 0.1, rotate: 135 },
+            whileInView: { x: 0, opacity: 1, scale: 1, rotate: 0},
+            transition: { duration: 0.9, delay: 0.85 },
+            viewport: {once: true}
+          }}
+        >
           <p className="text-center h1"><FontAwesomeIcon icon={faDatabase} /> </p>
           <h2 className="text-center">Remotely</h2>
           <p>
@@ -38,21 +70,47 @@ function Home() {
           </p>
         </ContentWrapper>
 
-        <ContentWrapper classList="col-12 col-md">
+        <ContentWrapper classList="col-12 col-md"
+          animSettings={{
+            initial: { x: -150, opacity: 0, scale: 0.1, rotate: 170 },
+            whileInView: { x: 0, opacity: 1, scale: 1, rotate: 0 },
+            transition: { duration: 1.1, delay: 1.2 },
+            viewport: { once: true }
+          }}
+        >
           <p className="text-center h1"><FontAwesomeIcon icon={faCogs} /> </p>
           <h2 className="text-center">Flexible</h2>
           <p>
             Create quizzes on different topics. Flexibly customize them according to your needs and preferences.
           </p>
         </ContentWrapper>
+
       </div>
 
-      <div className="mt-5 pt-5">
-        <h2>So, what are you waiting for? 🤔</h2>
-        <Button classList="dark lg">
-          <span>Explore quizzes</span>
-           <FontAwesomeIcon className="ms-1" icon={faRocket}/>
-        </Button>
+      <div className="explore-block">
+        <motion.h2 
+          initial={{x: -250, opacity: 0 }}
+          whileInView={{x: 0, opacity: 1 }}
+          transition={{duration: 0.75}}
+          viewport={{ once: true }}
+          className="mb-4"
+          >
+          So, what are you waiting for? 🤔
+        </motion.h2>
+        
+        <motion.div
+          initial={{ x: -250, opacity: 0 }}
+          whileInView={{ x: 0, opacity: 1 }}
+          transition={{ duration: 0.75 }}
+          viewport={{ once: true }}
+          className="mb-5"
+        >
+          <Button classList="dark lg">
+            <span>Explore quizzes</span>
+            <FontAwesomeIcon className="ms-1" icon={faRocket} />
+          </Button>
+        </motion.div>
+
       </div>
     </section>
   )
