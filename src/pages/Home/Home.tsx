@@ -10,9 +10,9 @@ import './Home.scss';
 function Home() {
 
   return (
-    <section className="container">
+    <main className="container">
 
-      <div className="intro">
+      <section className="intro">
         <motion.h1 className="text-center mt-5 title"
           initial={{y: -500, scale: 2.5, opacity: 0}}
           animate={{y: 0, scale: 1, opacity: 1}}
@@ -34,10 +34,10 @@ function Home() {
         >
           Test yourself in React and make cool quizzes!
         </motion.p>
-      </div>
+      </section>
 
 
-      <div className="row mt-5">
+      <section className="row mt-5">
         <ContentWrapper classList="col-12 col-md mb-3 mb-md-0 me-md-3 me-lg-5" animSettings={{
             initial: { x: -80, opacity: 0, scale: 0.1, rotate: 90 },
             whileInView: { x: 0, opacity: 1, scale: 1, rotate: 0 },
@@ -85,9 +85,9 @@ function Home() {
           </p>
         </ContentWrapper>
 
-      </div>
+      </section>
 
-      <div className="explore-block">
+      <section className="explore-block">
         <motion.h2 
           initial={{x: -250, opacity: 0 }}
           whileInView={{x: 0, opacity: 1 }}
@@ -111,8 +111,8 @@ function Home() {
           </Button>
         </motion.div>
 
-      </div>
-    </section>
+      </section>
+    </main>
   )
 }
 
