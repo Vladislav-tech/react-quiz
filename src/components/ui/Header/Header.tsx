@@ -17,7 +17,7 @@ function Header() {
       <FontAwesomeIcon className="ms-2" icon={faInfoCircle} />
     </Link>,
 
-    <Link to="/quiz" className="link">
+    <Link to="/quizzes" className="link">
       Quizzes
       <FontAwesomeIcon className="ms-2" icon={faQuestionCircle} />
     </Link>,

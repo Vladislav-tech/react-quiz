@@ -1,0 +1,110 @@
+[
+  {
+    "quiz": {
+      "title": "HTML",
+      "quizzes": [
+        {
+          "title": "What is HTML?",
+          "variants": [
+            "Hyper text markup language",
+            "Programming language",
+            "Style language",
+            "I don't know"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "How many headings is available?",
+          "variants": [
+            "5",
+            "6",
+            "4",
+            "9"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "What is doctype?",
+          "variants": [
+            "I don't know",
+            "You can add scripts in it",
+            "It describes type of the document"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Who is making the Web standards?",
+          "variants": [
+            "Microsoft",
+            "Mozilla",
+            "Google",
+            "The World Wide Web Consortium"
+          ],
+          "correct": 3
+        },
+        {
+          "title": "What is the correct HTML element for inserting a line break?",
+          "variants": [
+            "<br>",
+            "<break>",
+            "<br></br>",
+            "<lb>"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "What is the correct HTML for creating a hyperlink?",
+          "variants": [
+            "<a>https://google.com</a>",
+            "<a href=\"https://google.com\">Google</a>",
+            "<link to\"https://google.com\">Google</link>",
+            "<a url=\"https://google.com\">Google</a>"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "How can you make a numbered list?",
+          "variants": [
+            "<ul>",
+            "<li>",
+            "<ol>",
+            "<list>"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "How can you make a bulleted list?",
+          "variants": [
+            "<ul>",
+            "<li>",
+            "<ol>",
+            "<list>"
+          ],
+          "correct": 0
+        }
+      ]
+    },
+    "id": 1
+  },
+  {
+    "quiz": {
+      "title": "CSS",
+      "quizzes": []
+    },
+    "id": 2
+  },
+  {
+    "quiz": {
+      "title": "JS",
+      "quizzes": []
+    },
+    "id": 3
+  },
+  {
+    "quiz": {
+      "title": "React",
+      "quizzes": []
+    },
+    "id": 4
+  }
+]

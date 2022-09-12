@@ -27,6 +27,8 @@
         background-color: lighten($primary-color, 20%);
         color: $secondary-color;
         scale: 1.05;
+        font-weight: 600;
+        fill: $secondary-color;
       }
     }
   

@@ -3,17 +3,17 @@ import './Button.scss';
 interface ButtonProps {
   children: React.ReactNode,
   classList?: string,
-  onBtnClick?: () => void,
+  onClick?: () => void,
 }
 
-function Button({ children, classList }: ButtonProps) {
+function Button({ children, classList, onClick }: ButtonProps) {
 
   const createClass = (): string => {
     return `button ${classList}`;
   };
 
   return (
-    <button className={createClass()}>{children}</button>
+    <button onClick={onClick} className={createClass()}>{children}</button>
   );
 }
 
