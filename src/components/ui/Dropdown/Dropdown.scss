@@ -6,113 +6,122 @@
   position: relative;
 
   ul {
-      position: absolute;
-      width: 100%;
-      max-height: 250px;
-      display: flex;
-      flex-direction: column;
-      gap: 10px;
-      background: $secondary-color;
-      overflow-y: scroll;
-    }
-  
-    li {
-      color: $primary-color;
+    position: absolute;
+    width: 100%;
+    max-height: 250px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    background: $secondary-color;
+    overflow-y: scroll;
+  }
+
+  li {
+    color: $primary-color;
+    display: block;
+    transition: .4s;
+    cursor: pointer;
+    border-radius: 12px;
+
+    a {
       display: block;
-      transition: .4s;
-      cursor: pointer;
-      border-radius: 12px;
-
-      &:hover {
-        background-color: lighten($primary-color, 20%);
-        color: $secondary-color;
-        scale: 1.05;
-        font-weight: 600;
-        fill: $secondary-color;
-      }
-    }
-  
-    ul,
-    li {
-      list-style: none;
-      margin: 0;
-      padding: 10px;
-    }
-  
-    button {
-      -webkit-appearance: button;
-      background: $secondary-color;
       color: $primary-color;
-      border: none;
-      border-radius: 10px;
-      padding: 10px 20px;
-      font-size: 18px;
-      font-weight: 700;
-      cursor: pointer;
-      width: 100%;
-      text-align: left;
-      margin-bottom: 10px;
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-    }
-  
-    button path {
-      fill: $primary-color;
+      text-decoration: none;
     }
 
-  
-    .controls {
-      display: flex;
-      flex-direction: column;
-      padding: 0;
-      padding-bottom: 50px;
-      align-items: center;
-    }
-  
-    label {
-      display: flex;
-      align-items: center;
-      margin: 20px 0;
-    }
-  
-    // input[type="number"] {
-    //   border: 0;
-    //   border-bottom: 1px dotted $primary-color;
-    //   color: var(--accent);
-    //   margin-left: 10px;
-    //   background: var(--background);
-    //   width: 50px;
-    // }
-  
-    // input[type="number"]:focus {
-    //   outline: none;
-    //   border-bottom: 2px solid var(--accent);
-    // }
-  
-    // input[type="number"]::-webkit-inner-spin-button {
-    //   -webkit-appearance: none;
-    // }
-  
-    .example {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: flex-start;
-    }
-  
-    .item {
-      width: 300px;
-      height: 300px;
-      display: flex;
-      align-items: flex-start;
-      justify-content: center;
-      background: $primary-color;
+    &:hover {
+      background-color: lighten($primary-color, 20%);
       color: $secondary-color;
-      font-size: 240px;
-      line-height: 260px;
-      font-weight: 700;
-      border-radius: 30px;
+      scale: 1.05;
+      font-weight: 600;
+      fill: $secondary-color;
     }
-}
 
+    &:hover a {
+      color: $secondary-color;
+    }
+  }
+
+  ul,
+  li {
+    list-style: none;
+    margin: 0;
+    padding: 10px;
+  }
+
+  button {
+    -webkit-appearance: button;
+    background: $secondary-color;
+    color: $primary-color;
+    border: none;
+    border-radius: 10px;
+    padding: 10px 20px;
+    font-size: 18px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  button path {
+    fill: $primary-color;
+  }
+
+
+  .controls {
+    display: flex;
+    flex-direction: column;
+    padding: 0;
+    padding-bottom: 50px;
+    align-items: center;
+  }
+
+  label {
+    display: flex;
+    align-items: center;
+    margin: 20px 0;
+  }
+
+  // input[type="number"] {
+  //   border: 0;
+  //   border-bottom: 1px dotted $primary-color;
+  //   color: var(--accent);
+  //   margin-left: 10px;
+  //   background: var(--background);
+  //   width: 50px;
+  // }
+
+  // input[type="number"]:focus {
+  //   outline: none;
+  //   border-bottom: 2px solid var(--accent);
+  // }
+
+  // input[type="number"]::-webkit-inner-spin-button {
+  //   -webkit-appearance: none;
+  // }
+
+  .example {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+  }
+
+  .item {
+    width: 300px;
+    height: 300px;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    background: $primary-color;
+    color: $secondary-color;
+    font-size: 240px;
+    line-height: 260px;
+    font-weight: 700;
+    border-radius: 30px;
+  }
+}

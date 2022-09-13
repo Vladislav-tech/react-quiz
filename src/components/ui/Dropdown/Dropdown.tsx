@@ -66,11 +66,6 @@ function Dropdown({ title = '', dropdownItems = [] }: DropdownProps) {
         }}
         style={{ pointerEvents: isOpen ? "auto" : "none" }}
       >
-        {/* <motion.li variants={itemVariants}>Item 1 </motion.li>
-        <motion.li variants={itemVariants}>Item 2 </motion.li>
-        <motion.li variants={itemVariants}>Item 3 </motion.li>
-        <motion.li variants={itemVariants}>Item 4 </motion.li>
-        <motion.li variants={itemVariants}>Item 5 </motion.li> */}
         {
           dropdownItems.map((item: React.ReactNode, index: number) => {
             return <motion.li key={index} variants={itemVariants}>{item}</motion.li>

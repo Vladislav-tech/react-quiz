@@ -81,17 +81,170 @@
             "<list>"
           ],
           "correct": 0
+        },
+        {
+          "title": "What is the correct HTML for making a checkbox?",
+          "variants": [
+            "<input type=\"checkbox\">",
+            "<check>",
+            "<checkbox>",
+            "<input type=\"check\">"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "HTML program is saved using _________ extension",
+          "variants": [
+            ".hml",
+            ".htlm",
+            ".xml",
+            ".html"
+          ],
+          "correct": 3
+        },
+        {
+          "title": "Who was the primary author of HTML?",
+          "variants": [
+            "Steve Jobs",
+            "Bill Gates",
+            "Vladislav Tseplyav",
+            "Tim Berners-Lee"
+          ],
+          "correct": 3
         }
       ]
     },
-    "id": 1
+    "id": 1,
+    "pass": 8
   },
   {
     "quiz": {
       "title": "CSS",
-      "quizzes": []
+      "quizzes": [
+        {
+          "title": "What does CSS stand for?",
+          "variants": [
+            "Cascading Style Sheets",
+            "Programming language",
+            "Hyper text markup language",
+            "I don't know"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "What is the correct HTML for referring to an external style sheet?",
+          "variants": [
+            "<stylesheet>mystyle.css</stylesheet>",
+            "<style src=\"mystyle.css\">",
+            "Hyper text markup language",
+            "<link rel=\"stylesheet\" type=\"text/css\" href=\"mystyle.css\">"
+          ],
+          "correct": 3
+        },
+        {
+          "title": "Where in an HTML document is the correct place to refer to an external style sheet?",
+          "variants": [
+            "In the <body> section",
+            "In the <head> section",
+            "Hyper text markup language",
+            "At the end of the document"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "What is the lates CSS version?",
+          "variants": [
+            "CSS3",
+            "CSS2",
+            "CSS4",
+            "CSS5"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Which HTML tag is used to define an internal style sheet?",
+          "variants": [
+            "<script>",
+            "<css>",
+            "<style>",
+            "<internal>"
+          ],
+          "correct": 2      
+        },
+        {
+          "title": "Which HTML attribute is used to define inline styles?",
+          "variants": [
+            "style",
+            "css",
+            "inline",
+            "styles"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Which HTML attribute is used to define inline styles?",
+          "variants": [
+            "style",
+            "css",
+            "inline",
+            "styles"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Which HTML attribute is used to define inline styles?",
+          "variants": [
+            "body:color=black;",
+            "{body:color=black;}",
+            "{body;color:black;}",
+            "body {color: black;}"
+          ],
+          "correct": 3
+        },
+        {
+          "title": "How do you insert a comment in a CSS file?",
+          "variants": [
+            "//Comment",
+            "/*Comment*/",
+            "#Comment",
+            "<!--Comment-->"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "How do you insert a comment in a CSS file?",
+          "variants": [
+            "//Comment",
+            "/*Comment*/",
+            "#Comment",
+            "<!--Comment-->"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "How do you add a background color for all <h1> elements?",
+          "variants": [
+            "all.h1 { background-color: #fff}",
+            "h1 all{ background-color: #fff}",
+            "h1 { background-color: #fff}",
+            "h1(everyone) { background-color: #fff}"
+          ],
+          "correct": 2
+        },
+        {
+          "title": " __________ is a property that allows developers to add rounded corners on the design elements.",
+          "variants": [
+            "box-shadow",
+            "border-raduis",
+            "round-corner",
+            "corner"
+          ],
+          "correct": 1
+        }
+      ]
     },
-    "id": 2
+    "id": 2,
+    "pass": 8
   },
   {
     "quiz": {

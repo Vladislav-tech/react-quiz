@@ -3,6 +3,7 @@ import { ContentWrapper, Dropdown } from '../../components';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { } from '@fortawesome/free-solid-svg-icons';
 import { HtmlSvg, CssSvg, JsSVG, ReactSVG } from '../../assets/svg';
+import { Link } from 'react-router-dom';
 
 function Quizzes() {
   return (
@@ -29,20 +30,20 @@ function Quizzes() {
           <Dropdown
             title="Quizzes"
             dropdownItems={
-              [<span>
+              [<Link to="/quizzes/1">
                 <span className="me-2">HTML</span>  <HtmlSvg width="16" />
-              </span>,
-              <span>
+              </Link>,
+              <Link to="/quizzes/2">
                 <span className="me-2">CSS</span>  <CssSvg width="16" />
-              </span>
+              </Link>
                 ,
-              <span>
+              <Link to="/quizzes/3">
                 <span className="me-2">JS</span>  <JsSVG width="16" />
-              </span>
+              </Link>
                 ,
-              <span>
+              <Link to="/quzzes/4">
                 <span className="me-2">React</span>  <ReactSVG width="16" />
-              </span>
+              </Link>
               ]
             } />
         </ContentWrapper>
@@ -56,7 +57,7 @@ function Quizzes() {
           <h2>Users quizzes</h2>
 
           <p>Do you want something new?.</p>
-          <p>How about some quizzes created by people like? Any topic, any difficulty. You should try!</p>
+          <p>How about some quizzes created by people like you? Any topic, any difficulty. You should try!</p>
 
           <Dropdown
             title="Quizzes"

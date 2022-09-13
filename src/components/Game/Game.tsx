@@ -1,3 +1,6 @@
+import { AnimatePresence, motion } from 'framer-motion';
+
+
 // interface GameProps {
 //   question: string | undefined,
 //   onClickVariant: () => void,
@@ -27,11 +30,23 @@ function Game({ question, onClickVariant, step, correct, setCorrect, quizLength 
       </div>
 
       <div className="col-12 col-md-6 mt-3 mt-md-0">
-        <div className="w-md-75 ms-auto d-flex flex-column">
-          {question.variants.map((variant: string, index: number) => {
-            return <Button onClick={() => onBtnClick(index)} classList="mb-3 lg" key={variant}>{variant}</Button>
-          })}
-        </div>
+        <ul className="w-md-75 ms-auto d-flex flex-column">
+          <AnimatePresence exitBeforeEnter>
+            {question.variants.map((variant: string, index: number) => {
+              return (
+                <motion.li
+                  key={variant}
+                  initial={{opacity: 0.3}}
+                  animate={{opacity: 1}}
+                  exit={{opacity: 0.3}}
+                  className="mb-3"
+                >
+                  <Button onClick={() => onBtnClick(index)} classList="lg d-block w-100" >{variant}</Button>
+                </motion.li>
+            )
+            })}
+          </AnimatePresence>
+        </ul>
 
       </div>
     </div>

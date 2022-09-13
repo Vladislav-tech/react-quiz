@@ -1,5 +1,5 @@
-import { motion, AnimatePresence } from 'framer-motion';
-import React, { useState } from 'react';
+import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
 import { Button, ContentWrapper } from "../../components";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faThumbsUp, faDatabase, faCogs, faRocket } from '@fortawesome/free-solid-svg-icons';
@@ -105,10 +105,13 @@ function Home() {
           viewport={{ once: true }}
           className="mb-5"
         >
-          <Button classList="dark lg">
-            <span>Explore quizzes</span>
-            <FontAwesomeIcon className="ms-1" icon={faRocket} />
-          </Button>
+          <Link to="/quizzes">
+            <Button classList="dark lg">
+              <span>Explore quizzes</span>
+              <FontAwesomeIcon className="ms-1" icon={faRocket} />
+            </Button>
+          </Link>
+
         </motion.div>
 
       </section>

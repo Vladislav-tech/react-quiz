@@ -1,4 +1,5 @@
 import axios from 'axios';
+import { AnimatePresence, motion } from 'framer-motion';
 import React, { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Game, Loader, Result } from '../../components';
@@ -15,14 +16,15 @@ interface QuizData {
     title: string,
     quizzes: QuizStep[]
   }
-  id: number
+  id: number,
+  pass: number
 }
-
+const timeStart: number = Date.now();
 
 
 function Quiz() {
   const params = useParams();
-  const id = Number(params.id)
+  const id: number = Number(params.id)
 
   const [currentQuiz, setCurrentQuiz] = useState<QuizData>();
   const [isLoading, setIsLoading] = useState(true);
@@ -31,6 +33,7 @@ function Quiz() {
   const question = currentQuiz?.quiz?.quizzes[step];
 
   const [error, setError] = useState('');
+
 
   useEffect(() => {
     async function fetchData() {
@@ -68,16 +71,35 @@ function Quiz() {
       <>
         <h1 className="text-center mt-5">{currentQuiz?.quiz?.title ?? ''}</h1>
         <ContentWrapper classList="mt-5">
-          {currentQuiz?.quiz?.quizzes?.length === step ? <Result id={id} correct={correct} quizLength={quizLength}/> : (
-            <Game
-              step={step}
-              question={question}
-              onClickVariant={onClickVariant}
-              correct={correct}
-              setCorrect={setCorrect}
-              quizLength={currentQuiz?.quiz?.quizzes?.length ?? 0}
-            />
-          )}
+          <AnimatePresence>
+            {currentQuiz?.quiz?.quizzes?.length === step ? (
+              <motion.div
+                initial={{ scale: 0.1}}
+                animate={{ scale: 1}}
+                transition={{duration: 0.8}}
+                exit={{ scale: 0.1}}
+              >
+                <Result 
+                  id={id} 
+                  correct={correct} 
+                  quizLength={quizLength} 
+                  time={timeStart}
+                  pass={currentQuiz.pass}
+                  />
+              </motion.div>
+            ) : (
+              <Game
+                step={step}
+                question={question}
+                onClickVariant={onClickVariant}
+                correct={correct}
+                setCorrect={setCorrect}
+                quizLength={currentQuiz?.quiz?.quizzes?.length ?? 0}
+              />
+            )}
+          </AnimatePresence>
+
+
         </ContentWrapper>
       </>
     )
