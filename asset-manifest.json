@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/Vladislav-tech/react-quiz/static/css/main.eea01dda.css",
+    "main.js": "/Vladislav-tech/react-quiz/static/js/main.033ceb65.js",
+    "static/media/logo.svg": "/Vladislav-tech/react-quiz/static/media/logo.d557882a91aa159a3207b8d5340e79b6.svg",
+    "static/media/react.svg": "/Vladislav-tech/react-quiz/static/media/react.43bbe5414340c6c1c4f449a40ceab6e3.svg",
+    "static/media/github.svg": "/Vladislav-tech/react-quiz/static/media/github.7fb2e69546fbfc52725088fb16af4809.svg",
+    "index.html": "/Vladislav-tech/react-quiz/index.html",
+    "static/media/telegram.svg": "/Vladislav-tech/react-quiz/static/media/telegram.abee50176915cf503d5dd7d4649a9a42.svg",
+    "static/media/square-js.svg": "/Vladislav-tech/react-quiz/static/media/square-js.9c38118c54e2475f0ec81eebb77669ff.svg",
+    "static/media/email.svg": "/Vladislav-tech/react-quiz/static/media/email.469e9f8964e90167affb743a29bb5762.svg",
+    "static/media/css3-alt.svg": "/Vladislav-tech/react-quiz/static/media/css3-alt.8d2037a4115ce1e9a8d8d36a6ead71ec.svg",
+    "static/media/html5.svg": "/Vladislav-tech/react-quiz/static/media/html5.c1e5a74f422a1c4ed5c3d11d62357001.svg",
+    "main.eea01dda.css.map": "/Vladislav-tech/react-quiz/static/css/main.eea01dda.css.map",
+    "main.033ceb65.js.map": "/Vladislav-tech/react-quiz/static/js/main.033ceb65.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.eea01dda.css",
+    "static/js/main.033ceb65.js"
+  ]
+}
