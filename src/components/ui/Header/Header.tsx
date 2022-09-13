@@ -8,22 +8,23 @@ import './Header.scss';
 function Header() {
 
   const navItems: React.ReactNode[] = [
-    <Link to="/" className="link">React Quiz
-      <FontAwesomeIcon className="ms-2" icon={faHome} />
+    <Link to="/" className="link">
+      <span className="d-none d-sm-inline">React Quiz</span>
+      <FontAwesomeIcon className="ms-2 fs-sm-1" icon={faHome} />
     </Link>,
 
     <Link to="/about" className="link">
-      About
+      <span className="d-none d-sm-inline">About</span>
       <FontAwesomeIcon className="ms-2" icon={faInfoCircle} />
     </Link>,
 
     <Link to="/quizzes" className="link">
-      Quizzes
+      <span className="d-none d-sm-inline">Quizzes</span>
       <FontAwesomeIcon className="ms-2" icon={faQuestionCircle} />
     </Link>,
 
     <Link to="/contacts" className="link">
-      Contacts
+      <span className="d-none d-sm-inline">Contacts</span>
       <FontAwesomeIcon className="ms-2" icon={faIdCard} />
     </Link>
   ];

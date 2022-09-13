@@ -1,5 +1,5 @@
 import { Route, Routes } from 'react-router-dom';
-import { Home, NotFoundPage, Quiz, Quizzes, Result } from '../index';
+import { Home, NotFoundPage, Quiz, Quizzes, Result, About } from '../index';
 
 function Pages() {
   return (
@@ -8,6 +8,7 @@ function Pages() {
       <Route path="/quizzes" element={<Quizzes />} />
       <Route path="/quizzes/:id" element={<Quiz />} />
       <Route path="/result" element={<Result />} />
+      <Route path="/about" element={<About />} />
       <Route path="/*" element={<NotFoundPage />} />
     </Routes>  
   )
