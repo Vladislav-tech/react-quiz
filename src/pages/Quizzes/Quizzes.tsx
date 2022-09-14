@@ -39,7 +39,7 @@ function Quizzes() {
                 <span className="me-2">JS</span>  <JsSVG width="16" />
               </Link>
                 ,
-              <Link to="/quzzes/4">
+              <Link to="/quizzes/4">
                 <span className="me-2">React</span>  <ReactSVG width="16" />
               </Link>
               ]

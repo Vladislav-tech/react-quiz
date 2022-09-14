@@ -358,8 +358,191 @@
   {
     "quiz": {
       "title": "React",
-      "quizzes": []
+      "quizzes": [
+        {
+          "title": "What is React?",
+          "variants": [
+            "JavaScript library for building UI",
+            "Framework",
+            "Programming language",
+            "I don't know"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "What is the correct command to create a new React project?",
+          "variants": [
+            "npx create-react-app my-app",
+            "npm create-react-app my-app",
+            "npx createReactApp myApp",
+            "npx cra my-app"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "What command is used to start the React local development server?",
+          "variants": [
+            "npm build",
+            "npm dev",
+            "npx start",
+            "npm start"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "What command is used to start the React local development server?",
+          "variants": [
+            "npm build",
+            "npm dev",
+            "npx start",
+            "npm start"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "To develop and run React code, Node.js is required.",
+          "variants": [
+            "True",
+            "False"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "What is the component?",
+          "variants": [
+            "Function for changing state",
+            "UI building block",
+            "Function for testing react app"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "What is the component?",
+          "variants": [
+            "Function for changing state",
+            "UI building block",
+            "Function for testing react app"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Can state be changed without special function?",
+          "variants": [
+            "Yes but React will not Render component after that",
+            "No, it will be cause of error",
+            "I don't know"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "A copy of the 'real' DOM that is kept in memory is called what?",
+          "variants": [
+            "React DOM",
+            "Virtual DOM",
+            "Shadow DOM",
+            "Memory DOM"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "A copy of the 'real' DOM that is kept in memory is called what?",
+          "variants": [
+            "React DOM",
+            "Virtual DOM",
+            "Shadow DOM",
+            "Memory DOM"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "React component names must begin with an uppercase letter.",
+          "variants": [
+            "True",
+            "False"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "React component names must begin with an uppercase letter.",
+          "variants": [
+            "True",
+            "False"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Which operator can be used to conditionally render a React component?",
+          "variants": [
+            "//",
+            "||",
+            "&&",
+            "and",
+            "::"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "How can you render list is React? Example: list of todos",
+          "variants": [
+            "map() method",
+            "forEeach() method",
+            "render() method",
+            "renderItems() method"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "What is JSX?",
+          "variants": [
+            "Style language",
+            "Programming language",
+            "Special HTML-like JS syntax"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "What tool does React use to compile JSX?",
+          "variants": [
+            "Babel",
+            "React JSX compiler",
+            "NodeJS",
+            "I don't know"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "What tool does React use to compile JSX?",
+          "variants": [
+            "Babel",
+            "React JSX compiler",
+            "NodeJS",
+            "I don't know"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "What are props?",
+          "variants": [
+            "Object",
+            "Functions",
+            "I don't know"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "Who made React?",
+          "variants": [
+            "Google",
+            "Facebook",
+            "Microsoft",
+            "Apple"
+          ],
+          "correct": 1
+        }
+
+      ]
     },
-    "id": 4
+    "id": 4,
+    "pass": 12
   }
 ]

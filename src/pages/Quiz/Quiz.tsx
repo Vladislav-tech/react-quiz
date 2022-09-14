@@ -19,6 +19,7 @@ interface QuizData {
   id: number,
   pass: number
 }
+
 const timeStart: number = Date.now();
 
 
@@ -29,7 +30,11 @@ function Quiz() {
   const [currentQuiz, setCurrentQuiz] = useState<QuizData>();
   const [step, setStep] = useState(0);
   const [correct, setCorrect] = useState(0);
-  const question = currentQuiz?.quiz?.quizzes[step];
+  let question: QuizStep;
+
+  if (currentQuiz) {
+    question = currentQuiz.quiz.quizzes[step]
+  }
 
   const [error, setError] = useState('');
 
@@ -52,7 +57,7 @@ function Quiz() {
     setStep(step + 1);
   }
 
-  const quizLength = currentQuiz?.quiz?.quizzes?.length ?? 0;
+  const quizLength: number = currentQuiz?.quiz?.quizzes?.length ?? 0;
 
 
   const render = () => {

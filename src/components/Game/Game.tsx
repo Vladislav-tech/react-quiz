@@ -1,18 +1,21 @@
 import { AnimatePresence, motion } from 'framer-motion';
-
-
-// interface GameProps {
-//   question: string | undefined,
-//   onClickVariant: () => void,
-//   step: number,
-//   correct: number,
-//   setCorrect: () => void,
-// }
-
 import { Button } from "../ui";
 
-function Game({ question, onClickVariant, step, correct, setCorrect, quizLength }: any) {
-  const percentage = Math.round(step / quizLength * 100) + '%';
+interface GameProps {
+  question: {
+    title: string,
+    correct: number,
+    variants: string[],
+  },
+  onClickVariant: (index: number) => void,
+  step: number,
+  correct: number,
+  setCorrect: (correct: number) => void,
+  quizLength: number,
+}
+
+function Game({ question, onClickVariant, step, correct, setCorrect, quizLength }: GameProps) {
+  const percentage: string = Math.round(step / quizLength * 100) + '%';
 
   const onBtnClick = (index: number) => {
     if (index === question.correct) setCorrect(correct + 1);
