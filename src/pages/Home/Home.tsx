@@ -39,8 +39,8 @@ function Home() {
 
       <section className="row mt-5">
         <ContentWrapper classList="col-12 col-md mb-3 mb-md-0 me-md-3 me-lg-5" animSettings={{
-            initial: { x: -80, opacity: 0, scale: 0.1, rotate: 90 },
-            whileInView: { x: 0, opacity: 1, scale: 1, rotate: 0 },
+            initial: { x: -80, opacity: 0, scale: 0.1 },
+            whileInView: { x: 0, opacity: 1, scale: 1 },
             transition: {duration: 0.7, delay: 0.5},
             viewport: {once: true}
         }}>
@@ -56,8 +56,8 @@ function Home() {
 
         <ContentWrapper classList="col-12 col-md mb-3 mb-md-0 me-md-3 me-lg-5"
           animSettings={{
-            initial: { x: -130, opacity: 0, scale: 0.1, rotate: 135 },
-            whileInView: { x: 0, opacity: 1, scale: 1, rotate: 0},
+            initial: { x: -130, opacity: 0, scale: 0.1 },
+            whileInView: { x: 0, opacity: 1, scale: 1 },
             transition: { duration: 0.9, delay: 0.85 },
             viewport: {once: true}
           }}
@@ -72,8 +72,8 @@ function Home() {
 
         <ContentWrapper classList="col-12 col-md"
           animSettings={{
-            initial: { x: -150, opacity: 0, scale: 0.1, rotate: 170 },
-            whileInView: { x: 0, opacity: 1, scale: 1, rotate: 0 },
+            initial: { x: -150, opacity: 0, scale: 0.1 },
+            whileInView: { x: 0, opacity: 1, scale: 1 },
             transition: { duration: 1.1, delay: 1.2 },
             viewport: { once: true }
           }}

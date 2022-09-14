@@ -1,6 +1,6 @@
 import axios from 'axios';
 import { AnimatePresence, motion } from 'framer-motion';
-import React, { useEffect, useState } from 'react';
+import { useEffect, useState } from 'react';
 import { useParams } from 'react-router-dom';
 import { Game, Loader, Result } from '../../components';
 import ContentWrapper from '../../components/ContentWrapper/ContentWrapper';
@@ -27,7 +27,6 @@ function Quiz() {
   const id: number = Number(params.id)
 
   const [currentQuiz, setCurrentQuiz] = useState<QuizData>();
-  const [isLoading, setIsLoading] = useState(true);
   const [step, setStep] = useState(0);
   const [correct, setCorrect] = useState(0);
   const question = currentQuiz?.quiz?.quizzes[step];
@@ -37,7 +36,6 @@ function Quiz() {
 
   useEffect(() => {
     async function fetchData() {
-      setIsLoading(true);
       const { data } = await axios.get(`https://631de940cc652771a48dbafd.mockapi.io/quizzes?id=${id}`);
 
       if (!data[0]) {
@@ -45,7 +43,6 @@ function Quiz() {
       }
 
       setCurrentQuiz(data[0]);
-      setIsLoading(false);
     }
 
     fetchData();

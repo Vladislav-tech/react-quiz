@@ -1,7 +1,5 @@
-import { motion, AnimatePresence } from 'framer-motion';
+import { motion } from 'framer-motion';
 import { ContentWrapper, Dropdown } from '../../components';
-import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
-import { } from '@fortawesome/free-solid-svg-icons';
 import { HtmlSvg, CssSvg, JsSVG, ReactSVG } from '../../assets/svg';
 import { Link } from 'react-router-dom';
 
@@ -59,25 +57,7 @@ function Quizzes() {
           <p>Do you want something new?.</p>
           <p>How about some quizzes created by people like you? Any topic, any difficulty. You should try!</p>
 
-          <Dropdown
-            title="Quizzes"
-            dropdownItems={
-              [<span>
-                <span className="me-2">HTML</span>  <HtmlSvg width="16" />
-              </span>,
-              <span>
-                <span className="me-2">CSS</span>  <CssSvg width="16" />
-              </span>
-                ,
-              <span>
-                <span className="me-2">JS</span>  <JsSVG width="16" />
-              </span>
-                ,
-              <span>
-                <span className="me-2">React</span>  <ReactSVG width="16" />
-              </span>
-              ]
-            } />
+          <Dropdown title="Temporary unavailable" />
         </ContentWrapper>
       </section>
     </main>

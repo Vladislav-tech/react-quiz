@@ -169,7 +169,7 @@
             "<style>",
             "<internal>"
           ],
-          "correct": 2      
+          "correct": 2
         },
         {
           "title": "Which HTML attribute is used to define inline styles?",
@@ -249,9 +249,111 @@
   {
     "quiz": {
       "title": "JS",
-      "quizzes": []
+      "quizzes": [
+        {
+          "title": "Inside which HTML element do we put the JavaScript?",
+          "variants": [
+            "<js>",
+            "<script>",
+            "<javascript>",
+            "<scripting>"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "What made JS?",
+          "variants": [
+            "Brendan Eich",
+            "Vladislav Tseplyav",
+            "Guido van Rossum",
+            "Bill Gates"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "How many data types in JS?",
+          "variants": [
+            "4",
+            "7",
+            "8",
+            "12"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Where is the correct place to insert a JavaScript?",
+          "variants": [
+            "<head>",
+            "<body>",
+            "It depends on script type (async or not)",
+            "<html>"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "How do you write \"Hello World\" in an alert box?",
+          "variants": [
+            "alert('Hello World');",
+            "message('Hello World');",
+            "print('Hello World');",
+            "alertBox('Hello World');"
+          ],
+          "correct": 0
+        },
+        {
+          "title": "How do you create a function in JavaScript?",
+          "variants": [
+            "int myFunction(void) {}",
+            "function myFunction() {};",
+            "def myFunction():  ;",
+            "use function<void>: {}"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Choose a function to add two numbers in native JS",
+          "variants": [
+            "function (a: number, b: number): number { return a + b; }",
+            "function (a, b) { return a + b; }",
+            "int myFunction(int a, int b) { return a + b; }",
+            "All variants are wrong"
+          ],
+          "correct": 1
+        },
+        {
+          "title": "Can you declare variables in strict mode without keywords?",
+          "variants": [
+            "Yes",
+            "It depends on JS version",
+            "No",
+            "I don't know"
+          ],
+          "correct": 2
+        },
+        {
+          "title": "Choose all keywords to declare variables",
+          "variants": [
+            "var, let, const, public",
+            "var",
+            "let, const",
+            "var, let, const"
+          ],
+          "correct": 3
+        },
+        {
+          "title": "Can native JS get access to OS, files?",
+          "variants": [
+            "It depends on JS version",
+            "Yes",
+            "No, you need NodeJS for this",
+            "I don't know"
+          ],
+          "correct": 2
+        }
+      ]
     },
-    "id": 3
+    "id": 3,
+    "pass": 8
   },
   {
     "quiz": {

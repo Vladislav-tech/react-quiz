@@ -30,7 +30,7 @@ function Game({ question, onClickVariant, step, correct, setCorrect, quizLength 
       </div>
 
       <div className="col-12 col-md-6 mt-3 mt-md-0">
-        <ul className="w-md-75 ms-auto d-flex flex-column">
+        <ul className="w-md-75 ms-auto d-flex flex-column ps-0">
           <AnimatePresence exitBeforeEnter>
             {question.variants.map((variant: string, index: number) => {
               return (

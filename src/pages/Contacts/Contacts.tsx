@@ -16,7 +16,12 @@ function Contacts() {
       </motion.h1>
 
       <section className="mt-5">
-        <ContentWrapper>
+        <ContentWrapper animSettings={{
+          initial: { x: -80, opacity: 0, scale: 0.1 },
+          whileInView: { x: 0, opacity: 1, scale: 1 },
+          transition: { duration: 0.7, delay: 0.5 },
+          viewport: { once: true }
+        }}>
           <a 
             href="https://github.com/Vladislav-tech" 
             className="d-flex align-items-center contact-link mb-3"
